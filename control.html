@@ -258,7 +258,7 @@ body.control{font-family:var(--f-ui);background:
       <button class="btn big" type="button" id="bBack">Volver a la animación ahora</button>
     </div>
 
-    <p class="note">Al llegar a cero, la pantalla muestra <b>¡APROVECHA YA!</b> durante 20 segundos y vuelve sola a la animación.</p>
+    <p class="note">Al llegar a cero, la pantalla muestra <b>APROVEITE JÁ!</b> (y ¡Aprovecha ya! más chico) durante 20 segundos y vuelve sola a la animación.</p>
     <p class="foot">Este panel envía las órdenes a la pantalla por internet. Si la pantalla no responde, revisa que la PC tenga internet y la página abierta.</p>
   </div>
 </div>
@@ -552,7 +552,7 @@ body.control{font-family:var(--f-ui);background:
       now.classList.toggle("live", p.k === "cuenta");
       if (p.k === "cuenta"){ nowV.className = "v"; nowV.textContent = fmt(p.rest); nowS.textContent = "Cuenta regresiva en pantalla"; }
       else if (p.k === "pausa"){ nowV.className = "v"; nowV.textContent = fmt(p.rest); nowS.textContent = "En pausa (la pantalla muestra el tiempo congelado)"; }
-      else if (p.k === "aprovecha"){ nowV.className = "v small"; nowV.textContent = "¡APROVECHA YA!"; nowS.textContent = "Vuelve a la animación en " + Math.ceil(p.left/1000) + " s"; }
+      else if (p.k === "aprovecha"){ nowV.className = "v small"; nowV.textContent = "APROVEITE JÁ!"; nowS.textContent = "Vuelve a la animación en " + Math.ceil(p.left/1000) + " s"; }
       else { nowV.className = "v small"; nowV.textContent = "Animación"; nowS.textContent = "Promoção Relâmpago en espera"; }
       setup.hidden = !(p.k === "espera");
       running.hidden = !(p.k === "cuenta" || p.k === "pausa");

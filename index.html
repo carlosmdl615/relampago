@@ -247,7 +247,7 @@ body.control{font-family:var(--f-ui);background:
         <div class="bar"><i id="barFill"></i></div>
       </div>
 
-      <div class="go"><h1>¡APROVECHA YA!</h1><p>APROVEITE JÁ!</p></div>
+      <div class="go"><h1>APROVEITE JÁ!</h1><p>¡APROVECHA YA!</p></div>
       <div class="flash" id="flash"></div>
     </div>
   </div>
@@ -547,7 +547,7 @@ body.control{font-family:var(--f-ui);background:
       now.classList.toggle("live", p.k === "cuenta");
       if (p.k === "cuenta"){ nowV.className = "v"; nowV.textContent = fmt(p.rest); nowS.textContent = "Cuenta regresiva en pantalla"; }
       else if (p.k === "pausa"){ nowV.className = "v"; nowV.textContent = fmt(p.rest); nowS.textContent = "En pausa (la pantalla muestra el tiempo congelado)"; }
-      else if (p.k === "aprovecha"){ nowV.className = "v small"; nowV.textContent = "¡APROVECHA YA!"; nowS.textContent = "Vuelve a la animación en " + Math.ceil(p.left/1000) + " s"; }
+      else if (p.k === "aprovecha"){ nowV.className = "v small"; nowV.textContent = "APROVEITE JÁ!"; nowS.textContent = "Vuelve a la animación en " + Math.ceil(p.left/1000) + " s"; }
       else { nowV.className = "v small"; nowV.textContent = "Animación"; nowS.textContent = "Promoção Relâmpago en espera"; }
       setup.hidden = !(p.k === "espera");
       running.hidden = !(p.k === "cuenta" || p.k === "pausa");
